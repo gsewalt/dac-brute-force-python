@@ -1,6 +1,23 @@
-# sentinel_query.py
-# Python script to query Azure Log Analytics (Microsoft Sentinel) for failed logins
-# and detect potential brute-force attacks.
+# ============================================================
+#  Script Name: Azure Sentinel Brute Force Detector
+#  Description: Detects brute force attempts from Sentinel logs,
+#               sends alerts to Slack, and includes a demo
+#               workflow for blocking malicious IPs.
+#
+#  Version:     1.0
+#  Author:      Gregory Sewalt
+#  Tested On:   Python 3.10+, Azure Sentinel, Slack API
+#  Dependencies: requests, azure-identity, azure-monitor-query
+#
+#  Notes: 
+#    - Blocking functionality is provided as a demo only.
+#      It is intentionally non-functional to prevent
+#      accidental disruption in production environments.
+#    - Customize Slack webhook and Sentinel query as needed.
+#
+#  License: MIT
+#  Copyright (c) 2025 Gregory Sewalt
+# ============================================================
 # Prereqs: pip install azure-identity azure-monitor-query pandas requests
 # Set environment variables:
 #   AZURE_WORKSPACE_ID=<workspace-id>
@@ -132,3 +149,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
