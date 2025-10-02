@@ -1,6 +1,6 @@
 # 🔐 Azure Sentinel Brute Force Detector
 
-This project demonstrates detection-as-code and multi-platform security integration with a Python script (`brute_force_detector_sentinel.py`) that queries **Azure Log Analytics (Microsoft Sentinel)** for failed logins, detects potential brute-force activity, and sends alerts to **Slack**.  
+This project demonstrates detection-as-code and multi-platform security integration with a Python script ([`brute_force_detector_sentinel.py`](https://github.com/gsewalt/dac-brute-force-python/blob/main/scripts/brute_force_detector_sentinel.py)) that queries **Azure Log Analytics (Microsoft Sentinel)** for failed logins, detects potential brute-force activity, and sends alerts to **Slack**.  
 
 It also includes a safe **demo IP blocking workflow** (prints "blocked IPs list") to illustrate automated remediation.
 
